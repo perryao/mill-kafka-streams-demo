@@ -15,6 +15,13 @@ To run the unit tests, execute:
     $ mill streamsdemo.test
 ```
 
+# Formatting
+To format the code with Scalafmt, execute:
+
+```
+    $ mill streamsdemo.reformat
+```
+
 # Running
 To run the Kafka Streams app, execute:
 

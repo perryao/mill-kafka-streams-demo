@@ -1,9 +1,9 @@
-import java.util.{ Properties }
+import java.util.{Properties}
 import java.util.concurrent.TimeUnit
 import scala.util.Try
 import scala.language.implicitConversions
 
-import org.apache.kafka.streams.scala.{ StreamsBuilder }
+import org.apache.kafka.streams.scala.{StreamsBuilder}
 import org.apache.kafka.streams.scala.kstream._
 import org.apache.kafka.streams.{KafkaStreams, StreamsConfig, Topology}
 
@@ -28,7 +28,8 @@ object Main extends App {
   def topology(): Topology = {
     val builder = new StreamsBuilder()
 
-    val binaryNumbers: KStream[Array[Byte], String] = builder.stream(BinaryTopic)
+    val binaryNumbers: KStream[Array[Byte], String] =
+      builder.stream(BinaryTopic)
     val branches: Array[KStream[Array[Byte], String]] = binaryNumbers.branch(
       (k, v) => Try(java.lang.Integer.parseInt(v, 2)).isSuccess,
       (k, v) => Try(java.lang.Integer.parseInt(v, 2)).isFailure
