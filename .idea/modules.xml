@@ -1,0 +1,9 @@
+<project version="4">
+    <component name="ProjectModuleManager">
+        <modules>
+            <module fileurl="file://$PROJECT_DIR$/.idea_modules/mill-build.iml" filepath="$PROJECT_DIR$/.idea_modules/mill-build.iml"/>
+            <module fileurl="file://$PROJECT_DIR$/.idea_modules/streamsdemo.iml" filepath="$PROJECT_DIR$/.idea_modules/streamsdemo.iml"/>
+            <module fileurl="file://$PROJECT_DIR$/.idea_modules/streamsdemo.test.iml" filepath="$PROJECT_DIR$/.idea_modules/streamsdemo.test.iml"/>
+        </modules>
+    </component>
+</project>
